@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<plugin version="1.0">
+  <title xml:lang="ko">GPG Plugin</title>
+  <title xml:lang="en">GPG Plugin</title>
+  <link>https://github.com/mete0r/textcube-gpg</link>
+  <version>0.0</version>
+      <description xml:lang="ko">GPG</description>
+      <description xml:lang="en">GPG</description>
+  <description></description>
+  <license>Affero GPL v3</license>
+  <author xml:lang="ko" link="https://github.com/mete0r"><![CDATA[mete0r]]></author>
+  <author xml:lang="en" link="https://github.com/mete0r"><![CDATA[mete0r]]></author>
+  <safety changeData="no" exposeData="no" accessLocal="no" accessRemote="no" accessRaw="yes" />
+  <requirements>
+    <textcube>1.7</textcube>
+  </requirements>
+  <binding>
+    <tag name="SKIN_head_end" handler="GPG_addHeader" />
+    <config xml:lang="ko" dataValHandler="GPG_handleconfig">
+      <window width="500" height="525" />
+      <fieldset legend="기본 설정">
+        <field title="GPG 공개키" type="textarea" name="publickey">
+        </field>
+      </fieldset>
+    </config>
+  </binding>
+</plugin>
